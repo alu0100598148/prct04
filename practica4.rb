@@ -21,8 +21,6 @@ end
 a = crearMatriz(a)
 b = crearMatriz(b)
 
-#a = [[5, 4, 6], [2, 1, 0], [0, 0, 2]]
-#b = [[0, 2, 0], [3, 0, 1], [2, 1, 1]]
 c = Array.new
 m, n = a.size, a[1].size
 
@@ -53,3 +51,24 @@ puts "\n La Suma de la Matriz a y b es = "
 c.each do |fila|
   puts fila.join(" ")
 end
+
+for i in 0...m do
+  c[i] = Array.new
+  for j in 0...n do
+    c[i][j] = 0
+  end
+end
+
+for i in 0...m do
+  for j in 0...n do
+    for z in 0...m do
+      c[i][j] += a[i][z] * b[z][j]
+    end 
+  end
+end
+
+puts "\n El producto de las matrices es = "
+c.each do |fila|
+  puts fila.join(" ")
+end
+
