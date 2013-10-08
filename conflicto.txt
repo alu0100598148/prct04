@@ -1,0 +1,10 @@
+En la rama Oliver subimos la suma de matrices y en la rama Rodrigo añadimos al código la multiplicación de matrices. Seguidamente la rama Oliver se mezcló con la rama master y la subimos al repositorio. Por último mezclamos la rama Rodrigo con la rama master y surgió un conflicto ya que el código tenía lineas que no coincidian. Por lo tanto recibimos el siguiente error:
+
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'git@github.com:alu0100598148/prct04.git'
+To prevent you from losing history, non-fast-forward updates were rejected
+Merge the remote changes (e.g. 'git pull') before pushing again.  See the
+'Note about fast-forwards' section of 'git push --help' for details.
+
+
+Para resolverlo hicimos un pull y corregimos las lineas donde teniamos conflictos. Seguidamente con los conflictos resueltos subimos la practica correcta sin errores.
