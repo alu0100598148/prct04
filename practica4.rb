@@ -71,4 +71,3 @@ puts "\n El producto de las matrices es = "
 c.each do |fila|
   puts fila.join(" ")
 end
-
